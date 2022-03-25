@@ -1,0 +1,68 @@
+
+
+>>   DATASET DESCRIPTION
+
+> The dataset contains the following fields:
+
+Incidenct Code              - unique code for each incident
+Customer Company Group      - company group that raised the incident [IBERIA, IBERIA EXPRESS, IAG CARGO, OTHERS] --> Only IBERIA for this project
+Customer Company            - company that raised the incident [IBERIA, IBERIA EXPRESS, IAG, ...] --> Only IBERIA
+Create Date-Time            - time when incident is issued
+Resolution Date-Time        - time when incident is resolved
+Incident Status             - status of the incident [Assigned, Closed, In Progress, Pending, Resolved]
+Incident Description        - 
+Support Group               - 
+Tower Group                 -
+Domain Group                - 
+Priority                    - [Baja, Media, Alta, Crítica] --> [Low, Medium, High, Critical]
+Urgency                     - 
+Resolution Description      -
+Assigned Organization       -
+Inc. Category               - [INCIDENT]
+Last Modified Date          - 
+Inc. Type                   - kind of incident
+Inc. Element                -
+Aging (Days)                -
+Localizacion Cliente        -
+Departamento Cliente        -
+
+
+>>   KPI CALCULATION IN MONTH 4			
+			
+> KPIs:		                                                                                            COLUMN	                                    FOLDER
+
+Total number of critical incidences (P1) of the month:  19	                                            Urgency > Priority	                        MONTHLY INCIDENTS RAISED
+Total number of incidences raised in the month:	7790	                                                /	                                        MONTHLY INCIDENTS RAISED
+Number of incidences raised per priority in the month: Critical: 19 High: 504 Medium: 1838 Low: 5429	Urgency > Priority	                        MONTHLY INCIDENTS RAISED
+Number of incidences in the backlog per priority in the month: High: 1 Medium: 511 Low: 398	            Priority	                                MONTHLY INCIDENTS BACKLOG
+Number of incidences per cause: Table 1		                                                            Inc. Type       	                        MONTHLY INCIDENTS RAISED
+Number of incidences P1 in the month meeting SLA resolution time:  19	                                Create & Resolution Date Time, Urgency	    MONTHLY INCIDENTS RAISED
+% of incidences P1 meeting SLA: 100%	                                        	                    Create & Resolution Date Time, Urgency	    MONTHLY INCIDENTS RAISED
+Number of incidences P1 in the month not meeting SLA resolution time:  0	                            Create & Resolution Date Time, Urgency	    MONTHLY INCIDENTS RAISED
+% of incidences P1 not meeting SLA:  0%		                                                            Create & Resolution Date Time, Urgency	    MONTHLY INCIDENTS RAISED
+Average resolution time for incidences P1 meeting SLA:  01:01:00 (61 minutes)		                    Create & Resolution Date Time, Urgency	    MONTHLY INCIDENTS RAISED
+Average resolution time for incidences P1 not meeting SLA:  00:00	    	                            Create & Resolution Date Time, Urgency	    MONTHLY INCIDENTS RAISED
+Total number of incidences closed in the month:  7615		                                            /	                                        MONTHLY INCIDENTS CLOSED
+
+> TABLE 1: Number of incidents per cause
+
+ACCESS FAILURE	        4206
+SOFTWARE FAILURE	    1728
+PERFORMANCE ISSUE	    752
+DATA ISSUE	            231
+PROCESS FAILURE	        216
+DEFAULT	                216
+COMMUNICATIONS FAILURE	128
+HARDWARE FAILURE	    128
+TELEPHONY FAILURE	    75
+PRINTING FAILURE	    49
+SOFTWARE WARNING	    25
+SECURITY ISSUE	        20
+SECURITY ISSUE.CYBERATTACKS	16
+
+> SLA TARGETS:
+
+Critical: 4 hours
+High: 8 hours
+Medium: 5 work days (120 hours)
+Low: 15 work days (360 hours)
