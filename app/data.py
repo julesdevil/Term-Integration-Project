@@ -5,7 +5,7 @@ from IPython.display import display
 # ----------------------------------------
 # Data Preprocessing (importing and cleaning data)
 
-df = pd.read_csv('./data/Data_Incidents_Raised.csv')
+df = pd.read_csv('../data/Data_Incidents_Raised.csv')
 
 df.drop(['Incidenct Code','Customer Company','Incident Description','Support Group','Tower Group','Domain Group','Urgency','Resolution Description','Assigned Organization','Inc. Category','Last Modified Date','Inc. Element','Aging (Days)','Localización Cliente','Departamento Cliente'], axis=1, inplace=True)
 

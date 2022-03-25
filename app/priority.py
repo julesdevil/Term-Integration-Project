@@ -3,7 +3,7 @@ from dash import dash_table, html, dcc
 import plotly.express as px
 
 from data import df1, df5
-from app import app
+from style import app
 
 
 # ----------------------------------
